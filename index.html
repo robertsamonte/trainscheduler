@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Table</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+<br>
+<div class ="container">
+   <div class="jumbotron" style ="background-color:#999;">
+      <h1 class ="text-center" style="color:white;">Grey Goose Train Schedule</h1>
+      <h3 class ="text-center" style="color:white;">We'll get you there ON TIME...everytime!</h3>
+  
+  
+   </div>
+   <div class="panel panel-default" >
+       <div class="panel-heading" style ="background-color:#165CAB;">
+          <h3 class="panel-title" style ="color:white;">Current Train Schedule</h3>
+       </div>
+  <div class="panel-body">
+       <table class="table table-striped" id="trainSchedEntry">
+    <thead>
+      <tr>
+        <th>Train name</th>
+        <th>Destination</th>
+        <th>Frequency(min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+        
+      </tr>
+    </thead>
+    <tbody >
+   
+    </tbody>
+  </table>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" style ="background-color:#165CAB;">
+    <h3 class="panel-title" style ="color:white;">Add Train</h3>
+  </div>
+  <div class="panel-body">
+    <form role="form">
+  <div class="form-group">
+    <label for="name">Train Name</label>
+    <input type="text" class="form-control" id="trainName">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Destination</label>
+    <input type="text" class="form-control" id="destination">
+  </div>
+  <div class="form-group">
+    <label for="pwd">First Train Time(HH:mm - military time)</label>
+    <input type="text" class="form-control" id="firstTrain">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Frequency (min)</label>
+    <input type="text" class="form-control" id="frequency">
+  </div>
+  
+  <button type="submit" class="btn btn-default" style ="background-color:#165CAB;color:white;" id="addTrain">Submit</button>
+</form>
+
+
+</div>
+    
+  </div>
+</div>
+</div>
+
+<!-- Latest compiled and minified CSS & JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Javascript -->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
+
