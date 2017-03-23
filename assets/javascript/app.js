@@ -1,4 +1,4 @@
-var dataRef = new Firebase("https://am-traintimes.firebaseio.com/");
+// var dataRef = train Firebase("https://trainhomework-62954.firebaseio.com/");
 
 // Capture Button Click
 $("#addTrain").on("click", function() {
